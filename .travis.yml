@@ -38,6 +38,7 @@ before_install:
 - sleep 1
 
 install:
+  - if [ "$TOX_ENV" = "docs" ]; then sudo apt-get install enchant; fi
   - pip install tox codecov
   - tox --notest -e $TOX_ENV
 
