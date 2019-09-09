@@ -13,7 +13,7 @@ Let's imagine we have a task like this::
 
 We write the letter we receive to a file after waiting for a
 random amount of time (this is a simplified version of a real
-world problem where tasks take an unforseeable amount of time
+world problem where tasks take an unforeseeable amount of time
 and share resources like a database).
 
 We call it::

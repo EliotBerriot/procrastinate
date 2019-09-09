@@ -31,7 +31,7 @@ class InMemoryJobStore(store.BaseJobStore):
 
     def reset(self):
         """
-        Removes anything the store contains, to ensure test independance.
+        Removes anything the store contains, to ensure test independence.
         """
         self.jobs: List[jobs.Job] = []
         self.finished_jobs: List[Tuple[jobs.Job, jobs.Status]] = []

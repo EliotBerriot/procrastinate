@@ -38,7 +38,7 @@ Worker
     by one and executing them, and then wait for the queue to fill again.
 
 App (or Application) (see :py:class:`procrastinate.App`)
-    This is meant to be the main entrypoint of Procrastinate. The app knows
+    This is meant to be the main entry point of Procrastinate. The app knows
     all the tasks of your project, and thanks to the job store, it knows how
     to launch jobs to execute your tasks.
 

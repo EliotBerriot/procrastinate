@@ -191,7 +191,7 @@ class PostgresJobStore(store.BaseJobStore):
             renewing the socket `select` calls when waiting for tasks.
             The shorter the timeout, the more `select` calls it does.
             The longer the timeout, the longer the server will wait idle if, for
-            some reason, the postgres LISTEN call doesn't work.
+            some reason, the Postgres ``LISTEN`` call doesn't work.
         """
         self.connection = get_connection(**kwargs)
         self.socket_timeout = socket_timeout
